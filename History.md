@@ -51,6 +51,27 @@
   * remove various private `connect.utils` functions
   * drop node.js 0.8 support
 
+2.24.2 / 2014-07-27
+===================
+
+  * deps: body-parser@~1.5.2
+  * deps: depd@0.4.4
+    - Work-around v8 generating empty stack traces
+  * deps: express-session@~1.7.2
+  * deps: morgan@~1.2.2
+  * deps: serve-static@~1.4.2
+
+2.24.1 / 2014-07-26
+===================
+
+  * deps: body-parser@~1.5.1
+  * deps: depd@0.4.3
+    - Fix exception when global `Error.stackTraceLimit` is too low
+  * deps: express-session@~1.7.1
+  * deps: morgan@~1.2.1
+  * deps: serve-index@~1.1.4
+  * deps: serve-static@~1.4.1
+
 2.24.0 / 2014-07-22
 ===================
 
@@ -172,8 +193,8 @@
 2.20.0 / 2014-06-19
 ===================
 
-  * deprecate `verify` option to `json` -- use `body-parser` module directly
-  * deprecate `verify` option to `urlencoded` -- use `body-parser` module directly
+  * deprecate `verify` option to `json` -- use `body-parser` npm module instead
+  * deprecate `verify` option to `urlencoded` -- use `body-parser` npm module instead
   * deprecate things with `depd` module
   * use `finalhandler` for final response handling
   * use `media-typer` to parse `content-type` for charset
@@ -281,7 +302,7 @@
 2.19.0 / 2014-06-02
 ===================
 
-  * deprecate `methodOverride()` -- use `method-override` module directly
+  * deprecate `methodOverride()` -- use `method-override` npm module instead
   * deps: body-parser@1.3.0
     - add `extended` option to urlencoded parser
   * deps: method-override@2.0.1
